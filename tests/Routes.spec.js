@@ -1,27 +1,27 @@
 describe('Routes', function () {
-	var $state;
+  var $state;
 
-	beforeEach(module('app'));
+  beforeEach(module('app'));
 
-	describe('User', function () {
+  describe('User', function () {
 
-		beforeEach(inject(function ($injector) {
-			$state = $injector.get('$state');
-		}));
+    beforeEach(inject(function ($injector) {
+      $state = $injector.get('$state');
+    }));
 
-		var state;
-		it('should have the correct URL', function () {
-			state = $state.get('user');
+    var state;
+    it('should have the correct URL', function () {
+      state = $state.get('user');
 
-			expect(state.url).toEqual('/user/:id');
-		});
+      expect(state.url).toEqual('/user/:name');
+    });
 
-		it('should use the right controller', function () {
-			expect(state.controller).toContain('UserController');
-		});
+    it('should use the right controller', function () {
+      expect(state.controller).toContain('UserController');
+    });
 
-		it('should have a resolve', function () {
-			expect(state.resolve).toBeDefined();
-		});
-	});
+    it('should have a resolve', function () {
+      expect(state.resolve).toBeDefined();
+    });
+  });
 });
