@@ -13,7 +13,7 @@ describe('Routes', function () {
 		it('should have the correct URL', function () {
 			state = $state.get('user');
 
-			expect(state.url).toEqual('/user/:id');
+			expect(state.url).toEqual('/user/:name');
 		});
 
 		it('should use the right controller', function () {
