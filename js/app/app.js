@@ -2,13 +2,13 @@ angular
     .module('app', ['ui.router'])
     .config(function($stateProvider){
       $stateProvider
-        .state('user.', {
+        .state('user', {
           url: '/user/:id',
           templateUrl: 'views/user.html',
           controller: "UserController as user",
           resolve: {
             user: function($stateParams, $http){
-              return $http.get('http://0.0.0.0:8882/rest/user' + $stateParams.id)
+              return $http.get('http://0.0.0.0:8882/rest/user/' + $stateParams.id)
             }
           }
         })
