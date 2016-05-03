@@ -2,5 +2,5 @@ function UserController() {
 }
 
 angular
-	.module('app')
-	.controller('UserController', UserController);
+  .module('app')
+  .controller('UserController', UserController);
