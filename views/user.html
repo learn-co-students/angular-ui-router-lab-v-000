@@ -1,3 +1,12 @@
 <div>
-	User!
+	<div class="fl h5 w-20">
+		<img src="{{user.data.picture.large}}" class="fr pa2" />
+	</div>
+	<div style="fl h5 w-80">
+		<h1>{{user.data.name.title}} {{user.data.name.first}}, {{user.data.name.last}}</h1>
+		<p>{{user.data.location.street}}</p>
+		<p>{{user.data.location.city}}, {{user.data.location.state}} {{user.data.location.zip}}</p>
+		<p>{{user.data.email}}</p>
+		<p>Birthdate: {{user.data.dob | date: 'shortDate' }}</p>
+	</div>
 </div>
