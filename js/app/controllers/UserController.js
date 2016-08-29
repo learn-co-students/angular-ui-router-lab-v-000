@@ -1,4 +1,6 @@
-function UserController() {
+function UserController(user) {
+	this.info = user.data;
+	console.log(this.info.email);
 }
 
 angular
