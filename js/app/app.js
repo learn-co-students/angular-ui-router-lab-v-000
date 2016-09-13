@@ -8,6 +8,10 @@ function Router($stateProvider) {
         user: function($stateParams, UserService) {
           return UserService.getUser($stateParams.id);
         }
+      },
+      // add default params
+      params: {
+        id: 'liam'
       }
     });
 }
