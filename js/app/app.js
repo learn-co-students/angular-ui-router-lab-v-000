@@ -5,10 +5,10 @@ angular
         .state('user', {
           url: '/user/:id',
           templateUrl: 'views/user.html',
-          controller: "UserController",
+          controller: "UserController as user",
           resolve: {
-            user: function($http){
-              return $http.get('http://0.0.0.0:8882/rest/user/' + $stateProvider.id)
+            user: function($http, $stateParams){
+              return $http.get('http://0.0.0.0:8882/rest/user/' + $stateParams.id)
             }
           }
         });
