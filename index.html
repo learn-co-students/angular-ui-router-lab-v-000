@@ -51,10 +51,12 @@
 <body>
 
 <div ng-app="app" class="app">
-    <a href="" ui-sref="user" ui-sref-active="active">Liam</a> - <a href="" ui-sref="user" ui-sref-active="active">Jayden</a> - <a href="" ui-sref="user" ui-sref-active="active">Mary</a>
+    <a href="" ui-sref="user({id: 'liam'})" ui-sref-active="active">Liam</a> - <a href="" ui-sref="user({id: 'jayden'})" ui-sref-active="active">Jayden</a> - <a href="" ui-sref="user({id: 'mary'})" ui-sref-active="active">Mary</a>
 
     <div ui-view></div>
 </div>
+
+
 
 <script src="js/angular.js"></script>
 <script src="js/angular-ui-router.js"></script>
