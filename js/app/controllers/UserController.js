@@ -1,7 +1,7 @@
 function UserController(user) {
-  this.user = user.data;
+  this.data = user.data;
 }
 
 angular
-	.module('app')
-	.controller('UserController', UserController);
+  .module('app')
+  .controller('UserController', UserController);
