@@ -14,7 +14,7 @@ angular
         // Fetch Data
         resolve: {
           // Pass $http and $statPparams as arguments
-          user: function functionName($http, $statPparams) {
+          user: function functionName($http, $stateParams) {
             // Return response Data passing a dinamic Url
             return $http.get('http://0.0.0.0:8882/rest/user/' + $stateParams.id);
           }
