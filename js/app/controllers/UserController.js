@@ -1,4 +1,5 @@
 function UserController() {
+	this.user = user.data;
 }
 
 angular
