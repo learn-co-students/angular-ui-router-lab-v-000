@@ -10,7 +10,7 @@ angular
             user: function ($http, $stateParams) {
               // http call to get user's profile
               debugger
-              return $http.get('http://0.0.0.0:8882/rest/user/' + $stateParams.id);
+              return $http.get('http://localhost:8882/rest/user/' + $stateParams.id);
             }
           }
         });
