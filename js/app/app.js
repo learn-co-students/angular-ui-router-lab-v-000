@@ -9,7 +9,7 @@ angular
           resolve: {
             user: function ($routeParams, UserService) {
               // http call to get user's profile
-              return $http.get('/user/' + $routeParams.id);
+              return $http.get('/rest/user/' + $routeParams.id);
             }
           }
         });
