@@ -3,7 +3,7 @@ angular
     .config(function($stateProvider) {
       $stateProvider
         .state('user', {
-          url: '/rest/user/:id',
+          url: '/user/:id',
           templateUrl: 'views/user.html',
           controller: 'UserController as user',
           resolve: {
