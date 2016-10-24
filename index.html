@@ -43,9 +43,9 @@
 <body>
 
 <div ng-app="app" ui-sref-active="active" class="app">
-    <a href="" ui-sref="user ({name: 'liam'})" ui-sref-active="active">Liam</a> - <a href="" ui-sref="user ({name: 'jayden'})" ui-sref-active="active">Jayden</a> - <a href="" ui-sref="user ({name: 'mary'})" ui-sref-active="active">Mary</a>
+    <a href="" ui-sref="user({id: 'liam'})" ui-sref-active="active">Liam</a> - <a href="" ui-sref="user({id: 'jayden'})" ui-sref-active="active">Jayden</a> - <a href="" ui-sref="user({id: 'mary'})" ui-sref-active="active">Mary</a>
 
-    <div ui-view></div>
+    <ui-view></ui-view>
 </div>
 
 <script src="js/angular.js"></script>

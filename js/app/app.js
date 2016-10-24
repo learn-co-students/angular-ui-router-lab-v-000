@@ -3,13 +3,14 @@ angular
     .config(function($stateProvider) {
       $stateProvider
         .state('user', {
-          url: '/user/:id',
+          url: '/rest/user/:id',
           templateUrl: 'views/user.html',
           controller: 'UserController as user',
           resolve: {
-            user: function ($routeParams, UserService) {
+            user: function ($http, $stateParams) {
               // http call to get user's profile
-              return $http.get('/rest/user/' + $routeParams.id);
+              debugger
+              return $http.get('http://0.0.0.0:8882/rest/user/' + $stateParams.id);
             }
           }
         });
