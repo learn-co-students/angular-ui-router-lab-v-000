@@ -22,6 +22,6 @@ Add `ui.router` to our app and then configure the route for `/user/:name`, using
 
 Use the resolve property to fetch data from the URLs above to receive data.
 
-Change over the URLs to use the `uiSref` directive instead. Make sure you put the view directive in the HTML!
+Change over the URLs to use the `uiSref` directive instead. If you need a refresher on including a parameter in a uiSref link (i.e., the name "liam") read <a href="https://github.com/angular-ui/ui-router/wiki/URL-Routing" target="_blank">this</a> and <a href="https://scotch.io/tutorials/3-simple-tips-for-using-ui-router" target="_blank">this</a>. Make sure you put the view directive in the HTML!
 
 **Bonus**: use `uiSrefActive` to add an active class to the hyperlink and color the link in a different color when active!
