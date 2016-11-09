@@ -1,4 +1,5 @@
-function UserController() {
+function UserController(UserServiceReturnVal) {
+  this.user = UserServiceReturnVal.data;
 }
 
 angular
