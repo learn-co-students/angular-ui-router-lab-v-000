@@ -1,4 +1,5 @@
 function UserController() {
+	this.dust = pixie.data;
 }
 
 angular
