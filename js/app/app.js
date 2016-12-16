@@ -8,7 +8,6 @@ angular
         controller: 'UserController as user',
         resolve: {
           user: function ($http, $stateParams) {
-            debugger
             return $http.get('http://0.0.0.0:8882/rest/user/' + $stateParams.id);
           }
         }
