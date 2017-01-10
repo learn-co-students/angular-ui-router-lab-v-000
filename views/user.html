@@ -1,3 +1,4 @@
-<div>
-	User!
+<div ng-controller="UserController as ctrl">
+	<h2>{{ user.title }} {{ ctrl.user.firstName }} {{ ctrl.user.lastName }}</h2>
+	<p>{{ ctrl.user.email }}</p>
 </div>
